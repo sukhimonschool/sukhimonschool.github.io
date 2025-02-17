@@ -1,14 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>BES AN NOOR MODEL SCHOOL</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="src/main.js" defer></script>
+  <title>BES AN NOOR MODEL SCHOOL</title>
 </head>
 <body>
+  <div class="main" id="main">
+    <div class="header">
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo.png" alt="logo" style="width:50px;height:50px;"/>
+        </a>
+        <div class="top-name">
+          <span class="top-main-name">
+            BES AN NOOR
+          </span>
+          MODEL SCHOOL
+        </div>
+      </div>
+      <div class="menu-icons">
+        <button class="inv-btn">
+          <i class="material-icons">search</i>
+        </button>
+        <button class="inv-btn" onclick="navopen()">
+          <i class="material-icons md-36">menu</i>
+        </button>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="bnr-txt">Best Educational institution</div>
+      <button class="bnr-btn">Learn more</button>
+      <img class="bnr-img bnr-img1" src="img/banner01.webp" alt="banner01"/>
+      <img class="bnr-img bnr-img2" src="img/banner02.webp" alt="banner02"/>
+      <img class="bnr-img bnr-img3" src="img/banner03.webp" alt="banner03"/>
+      <img class="bnr-img bnr-img4" src="img/banner04.webp" alt="banner4"/>
+    </div>
+    <div class="info-section">
+      <div class="info-card">
+        <i class="material-icons info-card-icons md-48">location_city</i>
+        <div class="info-card-title">
+          School Life
+        </div>
+        <br>
+        <div class="info-card-desp">
+          Fully Diciplined Atmosphere
+        </div>
+      </div>
+      <div class="info-card">
+        <i class="material-icons info-card-icons md-48">school</i>
+        <div class="info-card-title">
+          Academics
+        </div>
+        <br>
+        <div class="info-card-desp">
+          Class 1 to class 10
+        </div>
+      </div>
+      <div class="info-card">
+        <i class="material-icons info-card-icons md-48">sports_martial_arts</i>
+        <div class="info-card-title">
+          Athletics
+        </div>
+        <br>
+        <div class="info-card-desp">
+          Full Support on sports
+        </div>
+      </div>
+      <div class="info-card">
+        <i class="material-icons info-card-icons md-48">restaurant</i>
+        <div class="info-card-title">
+          School Meal
+        </div>
+        <br>
+        <div class="info-card-desp">
+          Full healthy and digestive meal
+        </div>
+      </div>
+    </div>
+    <div class="section2">
+      <div class="section2sub">
+        <img src="img/profile01.webp" alt="profile01">
+      </div>
+      <div class="section2sub s2salpha">
+        <h1 class="section-title">
+          Apply For Admission
+        </h1>
+        <p class="section-imp">
+          2025 Admission is open now.
+        </p>
+        <p class="section-txt">
+          We don’t just give students an education and experiences that set them up for success in a career. We help them succeed in their career to discover a field they’re passionate about and dare to lead it.
+        </p>
+        <button class="section-btn">
+          Apply Now
+        </button>
+        <img class="s2s2img" src="img/cover01.webp" alt="cover01">
+      </div>
+    </div>
+    <div class="section3">
+      <div class="section3sub">
+        <img src="img/logo.png" alt="logo" style="width:50px;height:50px">
+        <h3 class="section-title">
+          BES AN NOOR MODEL SCHOOL
+        </h3>
+        <p class="section-imp">
+          About our school
+        </p>
+        <img class="s2s2img" src="img/cover02.webp" alt="cover02">
+      </div>
+      <div class="section3sub">
+        <div class="section-txt">
+          <br><br>
+          aute sint minim ex et eu do consequat ut ad adipisicing dolor qui voluptate in tempor excepteur culpa non eiusmod aliquip officia nostrud magna velit qui nisi minim cillum anim deserunt eiusmod deserunt non est do dolor eu reprehenderit enim cillum incididunt excepteur adipisicing reprehenderit irure ea reprehenderit consequat do est commodo proident ut aute aute qui incididunt labore dolor ullamco minim irure id non ex eu ad qui ex in cupidatat officia in aliquip dolore et ex incididunt pariatur cupidatat do dolore consectetur enim aliquip incididunt ex do et magna voluptate nisi nisi ex exercitation est nulla proident fugiat
+          <br><br>
+          <a href="#" class="section-link">Read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="section4">
+      <div class="section4sub">
+        <i class="material-icons md-48 section-logo">book</i>
+        <h2 class="section-title">
+          Title
+        </h2><br>
+        <p class="section-txt">
+          tempor ullamco adipisicing dolor elit eiusmod incididunt enim magna enim
+        </p><br>
+        <a href="#" class="section-link">Learn more</a>
+      </div>
+      <div class="section4sub">
+        <i class="material-icons md-48 section-logo">book</i>
+        <h2 class="section-title">
+          Title
+        </h2><br>
+        <p class="section-txt">
+          tempor ullamco adipisicing dolor elit eiusmod incididunt enim magna enim
+        </p><br>
+        <a href="#" class="section-link">Learn more</a>
+      </div>
+      <div class="section4sub">
+        <i class="material-icons md-48 section-logo">book</i>
+        <h2 class="section-title">
+          Title
+        </h2><br>
+        <p class="section-txt">
+          tempor ullamco adipisicing dolor elit eiusmod incididunt enim magna enim
+        </p><br>
+        <a href="#" class="section-link">Learn more</a>
+      </div>
+      <div class="section4sub">
+        <i class="material-icons md-48 section-logo">book</i>
+        <h2 class="section-title">
+          Title
+        </h2><br>
+        <p class="section-txt">
+          tempor ullamco adipisicing dolor elit eiusmod incididunt enim magna enim
+        </p><br>
+        <a href="#" class="section-link">Learn more</a>
+      </div>
+    </div>
+    <div class="section5">
+      <div class="section5sub">
+        <h1>Important News</h1>
+        <div class="news-section">
+          <div class="news-sub">
+            <div class="news-box">
+              <div class="news-title">News Title</div>
+              <img class="news-img news-img0" src="img/news01.webp" alt="news01">
+              <div class="news-info">Date, Time, Location</div>
+              <div class="news-desp">
+                do occaecat enim dolore labore magna mollit laborum do exercitation voluptate excepteur ea do fugiat adipisicing enim pariatur consectetur proident
+                <a class="section-link">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="news-sub">
+            <div class="news-box">
+              <div class="news-title">News Title</div>
+              <img class="news-img" src="img/news01.webp" alt="news01">
+              <div class="news-info">Date, Time, Location</div>
+              <div class="news-desp">
+                do occaecat enim dolore labore magna mollit laborum do exercitation voluptate excepteur ea do fugiat adipisicing enim pariatur consectetur proident
+                <a class="section-link">Read more</a>
+              </div>
+            </div>
+            <div class="news-box">
+              <div class="news-title">News Title</div>
+              <img class="news-img" src="img/news01.webp" alt="news01">
+              <div class="news-info">Date, Time, Location</div>
+              <div class="news-desp">
+                do occaecat enim dolore labore magna mollit laborum do exercitation voluptate excepteur ea do fugiat adipisicing enim pariatur consectetur proident
+                <a class="section-link">Read more</a>
+              </div>
+            </div>
+            <div class="news-box">
+              <div class="news-title">News Title</div>
+              <img class="news-img" src="img/news01.webp" alt="news01">
+              <div class="news-info">Date, Time, Location</div>
+              <div class="news-desp">
+                do occaecat enim dolore labore magna mollit laborum do exercitation voluptate excepteur ea do fugiat adipisicing enim pariatur consectetur proident
+                <a class="section-link">Read more</a>
+              </div>
+            </div>
+            <div class="news-box">
+              <div class="news-title">News Title</div>
+              <img class="news-img" src="img/news01.webp" alt="news01">
+              <div class="news-info">Date, Time, Location</div>
+              <div class="news-desp">
+                do occaecat enim dolore labore magna mollit laborum do exercitation voluptate excepteur ea do fugiat adipisicing enim pariatur consectetur proident
+                <a class="section-link">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="linkside">
+        <div class="side-links">
+          <h3 class="section-title">
+            Quick Links
+          </h3><br>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+        </div>
+        <a class="special-link">
+            Apply Now
+          </a>
+        <img class="s2s2img" src="img/cover03.webp" alt="cover03">
+      </div>
+    </div>
     
+    
+    
+    
+    <div class="section-last">
+      <div class="section4sub">
+        <h3 class="section-title">
+          BES AN NOOR MODEL SCHOOL
+        </h3><br>
+        <p class="section-txt">
+          Vill: Panjaripara<br>
+          P.O: Sudarshannagar<br>
+          P.S: Banshihari<br>
+          Dist: South Dinajpur<br>
+          West Bengal, India.
+        </p><br>
+        <a class="section-link" href="https://maps.app.goo.gl/NsBNYxnGh3GvV2RE6">
+          Find in Map
+        </a>
+      </div>
+      <div class="section4sub">
+        <h3 class="section-title">
+          Title
+        </h3><br>
+        <p class="section-txt">
+          sit consectetur culpa magna pariatur pariatur cillum et consectetur ex reprehenderit elit amet cillum tempor voluptate fugiat consequat est amet
+        </p>
+      </div>
+      <div class="section4sub">
+        <h3 class="section-title">
+          Title
+        </h3><br>
+        <p class="section-txt">
+          sit consectetur culpa magna pariatur pariatur cillum et consectetur ex reprehenderit elit amet cillum tempor voluptate fugiat consequat est amet
+        </p>
+      </div>
+      <div class="section4sub">
+        <h3 class="section-title">
+          Title
+        </h3><br>
+        <p class="section-txt">
+          sit consectetur culpa magna pariatur pariatur cillum et consectetur ex reprehenderit elit amet cillum tempor voluptate fugiat consequat est amet
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="section-txt">
+        This website is made by
+      </p>
+      <h3>
+        <a class="section-link" href="https://supriyopaultm.github.io">Supriyo Paul</a>
+      </h3>
+    </div>
+  </div>
+  <div class="nav">
+    <div class="icons">
+      <button class="inv-btn" onclick="navclose()">
+        <i class="material-icons md-48">close</i>
+      </button>
+    </div>
+    <div class="nav-links">
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </div>
+  </div>
 </body>
 </html>
