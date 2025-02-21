@@ -381,6 +381,30 @@ img {
   border-top: 1px solid var(--clr-gray);
 }
 
+.section6 {
+  position: relative;
+}
+
+.section6 video {
+  width: 100%;
+  height: auto;
+}
+
+.section6sub {
+  position: absolute;
+  background-image: linear-gradient(var(--clr-alpha), #000000ee);
+  inset: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: var(--clr-white);
+}
+
+
+
+
+
+
 
 
 
