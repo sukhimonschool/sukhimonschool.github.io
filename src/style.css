@@ -9,6 +9,8 @@
   --clr-gray: #aaaaaaaa;
   --clr-black: #000000ff;
   --clr-alpha: #003844bb;
+  --clr-white1: #f7f7f7ff;
+  --clr-white2: #efefefff;
 }
 
 * {
@@ -386,17 +388,56 @@ img {
 }
 
 .section6 video {
+  height: 70vh;
+  object-fit: cover;
   width: 100%;
-  height: auto;
 }
 
 .section6sub {
   position: absolute;
   background-image: linear-gradient(var(--clr-alpha), #000000ee);
   inset: 0;
-  padding: 20px;
+  align-items: center;
   display: flex;
   justify-content: center;
+  color: var(--clr-white);
+  font-size: 4vh;
+}
+
+.section7 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section7sub {
+  width: 50%;
+  height: 60vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.s7s2 {
+  background-color: var(--clr-blue);
+}
+
+.block-img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.section7 input {
+  outline: none;
+  border: none;
+  padding: 20px 50px;
+  background-color: var(--clr-green);
+  color: var(--clr-white);
+}
+
+.section7 i {
   color: var(--clr-white);
 }
 
@@ -404,6 +445,50 @@ img {
 
 
 
+
+.infotabcontainer a {
+  text-decoration: none;
+}
+
+.infotabcontainer {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--clr-white2);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.infotabs {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--clr-white1);
+}
+
+.infosingletab {
+  padding: 10px 30px;
+  color: var(--clr-gray);
+}
+
+.infosingletab.active {
+  color: var(--clr-black);
+}
+
+.infotabitemcontainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.infotabitems {
+  background-color: var(--clr-white);
+  padding: 30px;
+  position: absolute;
+  display: none;
+}
+
+.infotabitems.active {
+  display: block;
+}
 
 
 
@@ -415,7 +500,7 @@ img {
 }
 
 @media screen and (max-width: 880px) {
-  .info-card, .section2sub, .section3sub, .section4sub, .section5sub, .linkside, .news-sub {
+  .info-card, .section2sub, .section3sub, .section4sub, .section5sub, .section7sub, .linkside, .news-sub {
     width: 100%;
   }
 }
