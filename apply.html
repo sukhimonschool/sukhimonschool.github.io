@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="src/main.js" defer></script>
+    <title>
+      BES AN NOOR MODEL SCHOOL
+    </title>
+  </head>
+  <body>
+    <div class="main" id="main">
+      <div class="header">
+        <div class="logo">
+          <a href="#">
+            <img src="img/logo.png" alt="logo" style="width:50px;height:50px;"/>
+          </a>
+          <div class="top-name">
+            <span class="top-main-name">
+            BES AN NOOR
+            </span>
+            MODEL SCHOOL
+          </div>
+        </div>
+        <div class="menu-icons">
+          <button class="inv-btn">
+            <i class="material-icons">search</i>
+          </button>
+          <button class="inv-btn" onclick="navopen()">
+            <i class="material-icons md-36">menu</i>
+          </button>
+        </div>
+      </div>
+      <div class="form-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="applyform">
+          <h1>Apply for Admission</h1>
+          <input type="hidden" name="access_key" value="72308fb5-4d7b-4ffc-ad2d-45a2bcd79a94">
+          <label for="name">Name of Student:</label>
+          <input type="text" name="name" required>
+          <label for="email">Your Email:</label>
+          <input type="email" name="email" required>
+          <label for="message">Contact Number:</label>
+          <input type="text" name="message" required>
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <input type="hidden" name="redirect" value="https://sukhimonschool.github.io/thanks.html">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      
+      
+      <div class="footer">
+        <p class="section-txt">
+          This website is made by
+        </p>
+        <h3>
+          <a class="section-link" href="https://supriyopaultm.github.io">Supriyo Paul</a>
+        </h3>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="icons">
+        <button class="inv-btn" onclick="navclose()">
+          <i class="material-icons md-48">close</i>
+        </button>
+      </div>
+      <div class="nav-links">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </div>
+    </div>
+  </body>
+</html>

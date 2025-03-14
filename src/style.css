@@ -47,6 +47,9 @@ img {
   width: 100%;
   right: 0;
   transition: right 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav {
@@ -99,6 +102,11 @@ img {
 .inv-btn {
   background-color: transparent;
   border: none;
+  transition: all 0.2s;
+}
+
+.inv-btn:hover {
+  transform: scale(1.3);
 }
 
 .header i {
@@ -154,6 +162,12 @@ img {
   width: fit-content;
   font-family: 'Amaranth';
   letter-spacing: 0.1rem;
+  transition: all 0.3s;
+}
+
+.bnr-btn:hover {
+  border-left: 10px solid var(--clr-yellow);
+  transform: scale(1.1) translateX(10%);
 }
 
 .banner img {
@@ -260,6 +274,13 @@ img {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   color: var(--clr-black);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.section-btn:hover {
+  transform: scale(1.1);
+  border-bottom: 3px solid var(--clr-black);
 }
 
 .section3 {
@@ -273,6 +294,11 @@ img {
 .section-link {
   text-decoration: none;
   color: var(--clr-yellow);
+  transition: all 0.3s;
+}
+
+.section-link:hover {
+  border-bottom: 2px solid var(--clr-black);
 }
 
 .section-logo {
@@ -292,6 +318,11 @@ img {
 .section4sub {
   padding: 50px;
   width: 25%;
+  transition: all 0.3s;
+}
+
+.section4sub:hover {
+  transform: scale(1.1);
 }
 
 .section5 {
@@ -321,6 +352,11 @@ img {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 5px #00000044;
+  transition: all 0.3s;
+}
+
+.news-box:hover {
+  transform: scale(1.05);
 }
 
 .news-title {
@@ -374,6 +410,13 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--clr-black);
+  transition: all 0.3s;
+}
+
+.special-link:hover {
+  font-size: 1.8rem;
 }
 
 .side-links a {
@@ -381,6 +424,12 @@ img {
   text-decoration: none;
   color: var(--clr-gray);
   border-top: 1px solid var(--clr-gray);
+  transition: all 0.3s;
+}
+
+.side-links a:hover {
+  color: var(--clr-yellow);
+  transform: scale(1.1);
 }
 
 .section6 {
@@ -446,48 +495,88 @@ img {
 
 
 
-.infotabcontainer a {
-  text-decoration: none;
+
+
+input, label, button {
+  display: block;
 }
 
-.infotabcontainer {
-  min-height: 100vh;
-  width: 100%;
-  background-color: var(--clr-white2);
-  padding: 20px;
-  overflow: hidden;
-}
-
-.infotabs {
+.form-container {
+  flex: 1;
   display: flex;
-  flex-wrap: wrap;
-  background-color: var(--clr-white1);
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  flex-direction: column;
 }
 
-.infosingletab {
-  padding: 10px 30px;
-  color: var(--clr-gray);
+.applyform {
+  background-color: var(--clr-white2);
+  padding: 50px 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--clr-gray);
+  display: flex;
+  flex-direction: column;
 }
 
-.infosingletab.active {
+.applyform h1 {
+  margin-bottom: 40px;
+  color: var(--clr-blue);
+}
+
+.applyform input {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.applyform label {
+  margin-bottom: 5px;
   color: var(--clr-black);
 }
 
-.infotabitemcontainer {
+.applyform button {
+  background-color: var(--clr-yellow);
+  border: none;
+  padding: 10px 30px;
+  font-family: 'Amaranth';
+  font-size: 1.2rem;
+}
+
+.info-container {
   display: flex;
   flex-direction: column;
-  position: relative;
+  align-items: center;
 }
 
-.infotabitems {
-  background-color: var(--clr-white);
-  padding: 30px;
-  position: absolute;
-  display: none;
+.infocard {
+  scroll-margin-top: 30vh;
+  margin: 20px;
 }
 
-.infotabitems.active {
-  display: block;
+.infotitle {
+  border-bottom: 2px solid var(--clr-blue);
+  font-size: 1.2rem;
+  width: max-content;
+  color: var(--clr-blue);
+  letter-spacing: 0.3rem;
+  background-color: var(--clr-yellow);
+  padding: 10px 30px;
+  margin-left: 20px;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0px 0px 10px var(--clr-gray);
+}
+
+.infocontent {
+  background-color: var(--clr-white2);
+  padding: 20px;
+  color: var(--clr-dark);
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--clr-gray);
 }
 
 
