@@ -256,6 +256,12 @@ img {
   letter-spacing: 0.3rem;
 }
 
+.underlined {
+  border-bottom: 2px solid var(--clr-green);
+  padding-bottom: 10px;
+  width: max-content;
+}
+
 .section-imp {
   color: var(--clr-yellow);
   letter-spacing: 0.1rem;
